@@ -5,13 +5,15 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="css/style.css")
+        link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet")
         title Guitar School
     body
         .container
             .section-one
-                .section-one_wrapper
+                .section-one__nav-wrapper
                     a(href="index.html").section-one_logo
-                    ul.section-one_menu
-                        li.section-one_menu-item Обо мне
-                        li.section-one_menu-item Занятия
-                        li.section-one_menu-item Запись
+                        img(src="img/logo.svg", alt="logo").section-one__logo-img
+                    ul.section-one__menu
+                        li.section-one__menu-item Обо мне
+                        li.section-one__menu-item Занятия
+                        li.section-one__menu-item Запись

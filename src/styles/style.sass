@@ -4,8 +4,11 @@
 *
     box-sizing: border-box
 
+html
+    font-family: 'Montserrat'
+
 .container
-    min-width: 1440px
+    max-width: 1440px
     width: 100%
     margin: 0 auto
 
@@ -13,14 +16,18 @@
     height: 880px
     background-color: #F0F0F0
     padding-top: 16px
-    &_wrapper
+    &__nav-wrapper
         display: flex
         justify-content: space-between
-        align-items: center
-    &_logo
-    &_menu
+        padding: 0 169px 0 173px
+    &__logo
+    &__menu
+        margin-top: 21px
         &-item
             display: inline
             margin-right: 66px
+            font-weight: 600
+            font-size: 18px
+            line-height: 22px
             &:last-child
                 margin-right: 0
