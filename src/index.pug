@@ -9,14 +9,16 @@ html(lang="en")
 		title Guitar School
 	body
 		.section-one
-			header.section-one__header
-				a(href="index.html").section-one_logo
-					img(src="img/logo.svg" alt="logo").section-one__logo-img
-				ul.section-one__menu
-					li.section-one__menu-item Обо мне
-					li.section-one__menu-item Занятия
-					li.section-one__menu-item Запись
-			.section-one__figure
-				.section-one__figure-item.section-one__figure-item_orange
-				.section-one__figure-item.section-one__figure-item_blue
-				.section-one__figure-item.section-one__figure-item_grey
+			.container.section-one__wrapper
+				header.section-one__header
+					a(href="index.html").section-one_logo
+						img(src="img/logo.svg" alt="logo").section-one__logo-img
+					nav.section-one__nav.nav-menu
+						ul.nav-menu__menu
+							li.nav-menu__item Обо мне
+							li.nav-menu__item Занятия
+							li.nav-menu__item Запись
+				.section-one__figure
+					.section-one__figure-item.section-one__figure-item_orange
+					.section-one__figure-item.section-one__figure-item_blue
+					.section-one__figure-item.section-one__figure-item_grey
