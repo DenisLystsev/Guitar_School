@@ -6,13 +6,13 @@ html(lang="en")
 		meta(name="viewport" content="width=device-width, initial-scale=1.0")
 		link(rel="stylesheet" href="css/style.css")
 		link(href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet")
+		script(src="https://kit.fontawesome.com/6d3ca53d44.js" crossorigin="anonymous")
 		title Guitar School
 	body
 		.section-one
 			.container.section-one__wrapper
 				header.section-one__header
-					a(href="index.html").section-one_logo
-						img(src="img/logo.svg" alt="logo").section-one__logo-img
+					a(href="index.html").section-one_logo: img(src="img/logo.svg" alt="logo").section-one__logo-img
 					nav.section-one__nav.nav-menu
 						ul.nav-menu__menu
 							li.nav-menu__item Обо мне
@@ -22,3 +22,10 @@ html(lang="en")
 					.section-one__figure-item.section-one__figure-item_grey
 					.section-one__figure-item.section-one__figure-item_blue
 					.section-one__figure-item.section-one__figure-item_orange
+					img(src="img/GuitarMen.png", alt="Гитарист").section-one__img
+				.section-one__right-box
+					.section-one__icons.icons-container
+						.icons-container__item: <i class="fa-brands fa-skype"></i>
+						.icons-container__item: <i class="fa-brands fa-vk"></i>
+						.icons-container__item: <i class="fa-brands fa-telegram"></i>
+						.icons-container__item: <i class="fa-brands fa-instagram"></i>

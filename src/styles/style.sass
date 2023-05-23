@@ -25,6 +25,22 @@ html
         &:last-child
             margin-right: 0
 
+.icons-container
+    display: flex
+    flex-direction: row
+    &__item
+        width: 40px
+        height: 40px
+        border: 1px solid #488AEA
+        border-radius: 50%
+        background-color: #E5E5E5
+        display: inherit
+        justify-content: center
+        align-items: center
+        margin-right: 17px
+        &:last-child
+            margin-right: 0
+
 .section-one
     height: 880px
     background-color: #F0F0F0
@@ -33,6 +49,7 @@ html
         justify-content: space-between
     &__figure
         position: relative
+        float: left
         &-item
             height: 220px
             border-radius: 100px
@@ -56,3 +73,8 @@ html
                 transform: rotate(-36.15deg)
                 top: 185px
                 left: -10px
+    &__img
+        position: relative
+        z-index: 5
+    &__right-box
+        float: right
