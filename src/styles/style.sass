@@ -40,6 +40,8 @@ html
         margin-right: 17px
         &:last-child
             margin-right: 0
+        i
+            font-size: 21px
 
 .section-one
     height: 880px
@@ -47,9 +49,11 @@ html
     &__header
         display: flex
         justify-content: space-between
+    &__content-wrapper
+        display: flex
+        flex-direction: row
     &__figure
         position: relative
-        float: left
         &-item
             height: 220px
             border-radius: 100px
@@ -76,5 +80,3 @@ html
     &__img
         position: relative
         z-index: 5
-    &__right-box
-        float: right
