@@ -1,5 +1,5 @@
-@import "_reset.scss"
 @import "_normalize.scss"
+@import "_reset.scss"
 
 $color-orange: #F28B64
 
@@ -48,6 +48,9 @@ html
     font-weight: 600
     font-size: 72px
     line-height: 68px
+    &__line
+        width: 65px
+        border-top: 1px solid #000
 
 .section-one
     height: 880px
@@ -57,6 +60,7 @@ html
         justify-content: space-between
     &__content-wrapper
         display: flex
+        position: relative
     &__figure
         position: relative
         &-item
@@ -85,6 +89,16 @@ html
     &__img
         position: relative
         z-index: 5
+    &__right-box
+        width: 372px
+        position: absolute
+        left: 715px
+        top: 150px
+    &__icons
+        margin-bottom: 3px
+        padding-left: 10px
+    &__title
+        margin-bottom: 5px
     &__text
         font-weight: 400
         font-size: 16px
