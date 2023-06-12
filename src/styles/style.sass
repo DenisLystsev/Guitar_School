@@ -173,19 +173,38 @@ html
 .section-two
     height: 700px
     background-color: #fff
+    position: relative
+    &__wrapper
+        padding-top: 32px
     &__title
         margin-bottom: 40px
     &__cards-wrapper
         margin-bottom: 28px
+        position: relative
+        z-index: 1
+    &__first-ring
+        transform: rotate(41.35deg)
+        position: absolute
+        top: 48px
+        right: 295px
+    &__second-ring
+        position: absolute
+        top: 345px
+        left: 280px
+    &__circle
+        background-color: #fff
 
 .cards
     display: flex
     &__item
+        display: flex
+        align-items: flex-end
         width: 360px
         height: 360px
         border-radius: 10px
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
         margin-right: 30px
+        padding-right: 50px
         &:last-child
             margin-right: 0
         &_grey
@@ -194,6 +213,12 @@ html
             background-color: $color-orange
         &_blue
             background-color: $color-blue
+    &__text
+        transform: rotate(90deg)
+        font-weight: 600
+        font-size: 36px
+        line-height: 44px
+        text-align: center
 
 .line-box
     display: flex
