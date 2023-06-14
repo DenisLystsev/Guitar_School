@@ -195,7 +195,6 @@ html
         top: 345px
         left: 280px
     &__circle
-        
 
 .cards
     display: flex
@@ -255,6 +254,8 @@ html
         align-items: center
         padding-top: 46px
     &__left-wrapper
+        position: relative
+        z-index: 1
         margin-right: 88px
         width: 542px
         padding-left: 155px
@@ -263,6 +264,9 @@ html
     &__right-title
         margin-bottom: 20px
         padding-left: 5px
+    &__line
+        position: absolute
+        top: 115px
     &__text
         margin-bottom: 25px
         font-weight: 400
@@ -272,15 +276,31 @@ html
             margin-bottom: 0
     &__first-ring
         position: absolute
-        top: 0
-        right: 0
+        top: -120px
+        right: -80px
         &_rotated
             transform: rotate(-48.2deg)
     &__second-ring
         position: absolute
-        top: 0
-        left: 0
+        top: 160px
+        left: 440px
+    &__circle
+        position: absolute
+        top: 260px
+        left: 360px
 
 .footer
+    display: flex
     background-color: #fff
-    min-height: 272px
+    height: 272px
+    &__img
+        margin-right: 97px
+    &__wrapper
+        padding-top: 39px
+    &__title
+        width: 557px
+        margin-bottom: 20px
+        position: relative
+    &__line
+        position: absolute
+        top: 70px
